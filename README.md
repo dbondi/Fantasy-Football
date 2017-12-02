@@ -2,8 +2,8 @@
 This is a project which uses gamma distribution to model the expected draft order of the players in the for drafts in 2017 NFL season. The gamma distrubtuions are created from the mean (i.e. average draft pick) and standard deviation of when a player is picked, in order to compute the likelihood a player is picked after x amount of picks(i.e. CDF), this data can be found at https://fantasyfootballcalculator.com/adp. 
 
 Information about gamma distributon:
-      alpha/shape = mean/standard deviation
-      beta/scale = standard deviation
+      _alpha/shape = mean/standard deviation
+      _beta/scale = standard deviation
 
 Based on the alpha and beta values this gamma distribtuin is actaully a Erlang distribution (see wikipedia.org/wiki/Erlang_distribution). An Erlang distribution is used to compute waiting times between k occurrences of an event this is very similar to how a player is picked in a draft, so this seemed like the best distribution to use to model the data.
 
