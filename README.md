@@ -1,4 +1,4 @@
-This is a project which uses gamma distributions to model the expected draft order in a Fantasy Football draft, for the 2017 NFL season (however by changing the data files this can be used for any normal style draft). The gamma distributions are created from the mean (i.e. average draft pick) and standard deviation of when a player is picked, in order to compute the likelihood a player is picked after x amount of rounds(i.e. CDF), this data can be found at https://fantasyfootballcalculator.com/adp.
+This is a project which uses gamma distributions to model the expected draft order in a Fantasy Football draft for the 2017 NFL season (however by changing the data files this can be used for any normal style draft). The gamma distributions are created from the mean (i.e. average draft pick) and standard deviation of when a player is picked, in order to compute the likelihood a player is picked after x amount of rounds(i.e. CDF), this data can be found at https://fantasyfootballcalculator.com/adp.
 
 Information about gamma distribution: (alpha or shape = mean/standard deviation) (beta or scale = standard deviation)
 
