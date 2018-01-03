@@ -2,6 +2,7 @@
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -24,8 +25,8 @@ public class Fantasy {
 	 * return 2d string array created
 	 */
 	public static ArrayList<ArrayList<String>> createList(String list) throws FileNotFoundException{
-	    File file = new File(list);
-	    @SuppressWarnings("resource")
+	    InputStream file = Fantasy.class.getResourceAsStream(list);
+	   
 		Scanner scan = new Scanner(file);
 	    
 	    ArrayList<ArrayList<String>> lines = new ArrayList<ArrayList<String>>();
@@ -36,7 +37,7 @@ public class Fantasy {
 	        lines.add(arraySplitted);
 	    }
 	    
-	   
+	   scan.close();
 		return lines;
 	}
 	
@@ -74,8 +75,8 @@ public class Fantasy {
 	 * return 2d string array created
 	 */
 	public static ArrayList<ArrayList<String>> createListData(String fileName) throws FileNotFoundException{
-	    File file = new File(fileName);
-	    @SuppressWarnings("resource")
+	    InputStream file = Fantasy.class.getResourceAsStream(fileName);
+
 		Scanner scan = new Scanner(file);
 	    
 	    ArrayList<ArrayList<String>> list = new ArrayList<ArrayList<String>>();
@@ -135,7 +136,7 @@ public class Fantasy {
 		    }
 	    }
 	    
-	   
+	   scan.close();
 		return list;
 	}
 	
