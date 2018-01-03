@@ -6,7 +6,7 @@ Based on the alpha and beta values this gamma distribution is actually a Erlang 
 
 From this the program calculates the expected number of positions that will be drafted in the next t picks, where t is the number of picks the current player has till their next pick. After computing this data the program determines which position is best to pick by looking at the difference in projected points, from the top player in that position vs the expected top player after t picks (projected points can be found at http://games.espn.com/ffl/tools/projections?). After determining the best position to pick from the program chooses the highest projected player in that position.
 
-To run the project from IDE run Fantasy.java in the src file. 
+To run the project from an IDE download project in an IDE and run Fantasy.java in the src file. 
 
 To run the project with jar file download FantasyFootball.jar and at command prompt use "java -cp FantasyFootball.jar Fantasy" 
 
